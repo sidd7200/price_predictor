@@ -87,9 +87,13 @@ st.markdown(
 
     /* Style the select box */
     .stSelectbox {
-        background-color: #fff3b0;
         border-radius: 10px;
         color: #4a4e69;
+        
+    }
+    .stSelectbox label{
+        color: 'black';
+        display:none;
     }
 
     /* Style the button */
@@ -114,6 +118,11 @@ st.markdown(
         font-weight: bold;
         border-radius: 5px;
     }
+    .location-label {
+        color: white !important;
+        background: none !important;
+        padding: 0 0 5px 0;
+    }
     </style>
     """,
     unsafe_allow_html=True
@@ -130,7 +139,10 @@ bath = st.number_input("Number of Bathrooms", min_value=1, max_value=10, step=1,
 bhk = st.number_input("Number of BHK", min_value=1, max_value=10, step=1, value=3)
 
 # Location select box from pre-loaded locations
-location = st.selectbox("Location", __locations)
+location_label = st.empty()
+location_label.markdown('<div class="location-label">Location</div>', unsafe_allow_html=True)
+location = st.selectbox("", __locations)
+
 
 # When the user clicks the "Predict" button
 if st.button("Predict Price"):
