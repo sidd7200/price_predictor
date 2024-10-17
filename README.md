@@ -36,11 +36,6 @@ The data was cleaned, and outliers were removed to improve the model's performan
 Machine Learning Model
 The house price prediction model was developed using Multiple Linear Regression. Key metrics used to evaluate the model include:
 
-Adjusted R²: Measures the proportion of variance explained by the model, adjusted for the number of predictors.
-Mean Absolute Error (MAE): Represents the average difference between the predicted prices and actual prices.
-Root Mean Squared Error (RMSE): Measures the standard deviation of prediction errors.
-The model performs well with a high R² value and low MAE and RMSE, indicating that it captures the key trends in Bangalore's real estate market.
-
 Technologies Used
 Streamlit: To build the web application interface.
 Pandas: For data manipulation and preprocessing.
@@ -48,3 +43,4 @@ Scikit-learn: To develop and train the regression model.
 NumPy: For numerical computations.
 Python: The main programming language used for building the model and web app.
 
+App Link: [https://pricepredictor-2w9q8k3xaizff9rzar5bd2.streamlit.app]
