@@ -1,4 +1,4 @@
-#Bangalore House Price Predictor
+# Bangalore House Price Predictor
 
 Overview:
 The Bangalore House Price Predictor is a machine learning-based web application that predicts house prices in Bangalore, India, based on various features like location, square footage, number of bedrooms, bathrooms, and more. This project aims to help users estimate the value of residential properties by providing an easy-to-use interface that gives quick, accurate price predictions.
